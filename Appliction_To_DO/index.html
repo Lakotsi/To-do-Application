@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do Application</title>
+
+    <link rel="stylesheet" href="src/main.css">
+
+   
+        
+</head>
+
+
+<body>
+    
+  <main class ="app" >
+			
+			<section class ="greeting">
+				<h2 class="title">
+				Welcome, What'Up
+        <input type="text" id ="name" placeholder="Enter Your name">
+				
+				</h2> 
+			</section>
+
+      <section class="create-todo">
+            <h3>Create A TODO</h3>
+                    <form id ="new-todo-form">
+                         <h4>What Do You Want To Add On Your To Do List</h4>
+                         <input type = "text"  id ="content"  name ="content" placeholder ="Make Your Bed "
+                         />
+
+                         <h4>Pick A Category</h4>
+                                    <div class="options">
+
+                                      <!---This option is for School tasks-->
+                                          <label> 
+                                                <input type="radio" name ="category" id ="category1" value="school">
+                                                <span class="bubble school"></span>
+                                                <div>School</div>
+                                          </label>
+
+                                            <!---This option is for Personal tasks-->
+                                          <label> 
+                                            <input type="radio" name ="category" id ="category2" value="personal">
+                                            <span class="bubble personal"></span>
+                                            <div>Personal</div>
+                                      </label>
+                               </div>
+                               <input type ="submit" value ="Add ToDO ">
+                                   
+                  </form>
+      </section>
+
+      <section class ="todo-list">
+                 <h3>Todo List</h3>
+                    <div class ="list" id ="todo-list">
+
+                       
+                    <!--<div class="todo-item done">-->      
+
+                         <!-- <label >-->     
+                           <!--  <input type="checkbox" />-->    
+                            <!--  <span class="bubble school"></span>-->    
+                           <!--</label>-->    
+
+                           <!--<div class ="todo-content">-->    
+                           <!--<input type="text" value ="Study " readonly />-->      
+
+                           <!--</div>-->    
+                           <!--<div class="actions">-->      
+                            <!--<button class="edit">edit</button>-->       
+                            <!--<button class="delete">Delete</button>-->       
+
+                             <!--</div>-->    
+  <!----> 
+                        <!-- </div>-->    
+
+                         <!--<div class="todo-item">-->    
+
+                        <!--<label >-->       
+                         <!--<input type="checkbox" />-->         
+                          <!--<span class="bubble personal" ></span>-->        
+                           <!--</label>-->    
+
+                          <!--<div class ="todo-content">-->     
+                           <!--<input type="text" value ="Jog " readonly />-->      
+
+                          <!--</div>-->     
+                            <!--<div class="actions">-->     
+                             <!--<button class="edit">edit</button>-->      
+                               <!--<button class="delete">Delete</button>-->    
+
+                              <!--</div>-->   
+
+                          <!--</div> >-->   
+
+
+
+
+                    </div>
+
+      </section>
+  
+  
+  
+  </main>
+
+
+
+    <script src="src/main.js"></script>
+</body>
+</html>
